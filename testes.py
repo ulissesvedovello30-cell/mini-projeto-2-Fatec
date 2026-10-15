@@ -1,6 +1,9 @@
-cpf = "237.615.809-59"
-inicio = cpf[:4]
-resto = cpf[4:]
+frutas = [("maçã", "vermelha"), ("banana", "amarela"), ("morango", "vermelha")]
 
-print(inicio)
-print(resto)
+por_cor = {}
+for fruta, cor in frutas:
+    if cor not in por_cor:
+        por_cor[cor] = []
+    por_cor[cor].append(fruta)
+
+print(por_cor)
